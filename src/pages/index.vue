@@ -1,7 +1,10 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <div>
+  <div class="dark:bg-gray-800">
     strona główna
     <br>
-    <HelloWorld/>
   </div>
 </template>

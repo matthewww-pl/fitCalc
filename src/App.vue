@@ -1,8 +1,20 @@
 <script setup lang="ts">
+  const { locale, t } = useI18n()
+  const isDark = useDark()
+  const cookies = useCookies()
+
+  if(cookies.get('locale')){
+    locale.value = cookies.get('locale')
+  }
+
+  if(cookies.get('darkMode')){
+    isDark.value = cookies.get('darkMode')
+  }
+  
   useHead({
-    title: 'Fit Calculator',
+    title: t('title'),
     meta: [
-      { name: 'description', content: 'Application to calculate BMI and PPM' },
+      { name: 'description', content: t('description') },
     ]
   })
 </script>

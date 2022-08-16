@@ -9,14 +9,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^6.0.1",
     "@vueuse/core": "^8.9.4",
     "@vueuse/head": "^0.7.6",
+    "@vueuse/integrations": "^9.1.0",
+    "autoprefixer": "^10.4.8",
+    "bootstrap-icons": "^1.9.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "tw-elements": "^1.0.0-alpha12",
+    "universal-cookie": "^4.0.4",
     "unplugin-auto-import": "^0.9.3",
     "unplugin-vue-components": "^0.21.1",
     "vite-plugin-pages": "^0.25.0",
     "vite-plugin-pwa": "^0.12.3",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vue": "^3.2.37",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.2"
   },
   "devDependencies": {

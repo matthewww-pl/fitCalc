@@ -1,0 +1,91 @@
+<script setup lang="ts">
+  const { t, locale } = useI18n()
+  const isDark = useDark()
+  const toggleDark = useToggle(isDark)
+  const cookies = useCookies()
+  
+  watch(isDark, () => {
+    cookies.set('darkMode',isDark.value, { maxAge: 60*60*24*7 })
+  })
+
+  watch(locale, () => {
+    cookies.set('locale', locale.value, { maxAge: 60*60*24*7 })
+  })
+
+  const setLang = (lang: string) =>{
+    locale.value = lang
+  }
+</script>
+
+<template>
+  <div>
+    <section class="mb-10 overflow-hidden">
+      <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%; background-image: url('/img/header-bg.jpg'); height: 750px;">
+        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.55);">
+          <div class="flex justify-center sm:justify-end text-gray-200 w-full px-10 pt-5">
+            <a href="#" @click="toggleDark()" v-if="isDark"><svg class="w-10 hover:text-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M494.2 221.9l-59.8-40.5 13.7-71c2.6-13.2-1.6-26.8-11.1-36.4-9.6-9.5-23.2-13.7-36.2-11.1l-70.9 13.7-40.4-59.9c-15.1-22.3-51.9-22.3-67 0l-40.4 59.9-70.8-13.7C98 60.4 84.5 64.5 75 74.1c-9.5 9.6-13.7 23.1-11.1 36.3l13.7 71-59.8 40.5C6.6 229.5 0 242 0 255.5s6.7 26 17.8 33.5l59.8 40.5-13.7 71c-2.6 13.2 1.6 26.8 11.1 36.3 9.5 9.5 22.9 13.7 36.3 11.1l70.8-13.7 40.4 59.9C230 505.3 242.6 512 256 512s26-6.7 33.5-17.8l40.4-59.9 70.9 13.7c13.4 2.7 26.8-1.6 36.3-11.1 9.5-9.5 13.6-23.1 11.1-36.3l-13.7-71 59.8-40.5c11.1-7.5 17.8-20.1 17.8-33.5-.1-13.6-6.7-26.1-17.9-33.7zm-112.9 85.6l17.6 91.2-91-17.6L256 458l-51.9-77-90.9 17.6 17.6-91.2-76.8-52 76.8-52-17.6-91.2 91 17.6L256 53l51.9 76.9 91-17.6-17.6 91.1 76.8 52-76.8 52.1zM256 152c-57.3 0-104 46.7-104 104s46.7 104 104 104 104-46.7 104-104-46.7-104-104-104zm0 160c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z"/></svg></a>
+            <a href="#" @click="toggleDark()" v-if="!isDark"><svg class="w-10 hover:text-yellow-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"/></svg></a>
+            <div class="flex items-center justify-center">
+              <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg ml-10" role="group">
+                <a
+                  href="#"
+                  @click="setLang('pl')"
+                  :class="{'bg-gray-800' : locale=='pl'}"
+                  class="
+                    rounded-l
+                    px-6
+                    py-2.5
+                    bg-gray-900
+                    text-white
+                    font-medium
+                    text-xs
+                    leading-tight
+                    uppercase
+                    transition
+                    duration-150
+                    ease-in-out
+                  "
+                >
+                  PL
+                </a>
+                <a
+                  href="#"
+                  @click="setLang('en')"
+                  :class="{'bg-gray-800' : locale=='en'}"
+                  class="
+                    rounded-r
+                    px-6
+                    py-2.5
+                    bg-gray-900
+                    text-white
+                    font-medium
+                    text-xs
+                    leading-tight
+                    uppercase
+                    transition
+                    duration-150
+                    ease-in-out
+                  "
+                >
+                  EN
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 md:px-12">
+              <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">{{ $t('title') }}<br /><span>{{ $t('description') }}</span></h1>
+              <a class="inline-block px-7 py-3 mr-2 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">{{ $t('getStarted') }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="-mt-2.5 md:-mt-4 lg:-mt-6 xl:-mt-10 text-white" style="height: 50px; transform: scale(2); transform-origin: top center;">
+        <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+          <path v-if="!isDark" d="M 0 48 L 1437.5 48 L 2880 48 L 2880 0 L 2160 0 C 1453.324 60.118 726.013 4.51 720 0 L 0 0 L 0 48 Z" fill="currentColor"></path>
+        </svg>
+      </div>
+    </section>
+  </div>
+</template>
