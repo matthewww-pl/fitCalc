@@ -19,7 +19,7 @@
 
 <template>
   <div>
-    <section class="mb-10 overflow-hidden">
+    <section class="overflow-hidden">
       <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%; background-image: url('/img/header-bg.jpg'); height: 750px;">
         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.55);">
           <div class="flex justify-center sm:justify-end text-gray-200 w-full px-10 pt-5">
@@ -74,17 +74,11 @@
           </div>
           <div class="flex justify-center items-center h-full">
             <div class="text-center text-white px-6 md:px-12">
-              <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">{{ $t('title') }}<br /><span>{{ $t('description') }}</span></h1>
-              <a class="inline-block px-7 py-3 mr-2 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">{{ $t('getStarted') }}</a>
+              <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">{{ $t('header.title') }}<br /><span>{{ $t('header.description') }}</span></h1>
+              <a class="inline-block px-7 py-3 mr-2 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">{{ $t('header.getStarted') }}</a>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="-mt-2.5 md:-mt-4 lg:-mt-6 xl:-mt-10 text-white" style="height: 50px; transform: scale(2); transform-origin: top center;">
-        <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
-          <path v-if="!isDark" d="M 0 48 L 1437.5 48 L 2880 48 L 2880 0 L 2160 0 C 1453.324 60.118 726.013 4.51 720 0 L 0 0 L 0 48 Z" fill="currentColor"></path>
-        </svg>
       </div>
     </section>
   </div>

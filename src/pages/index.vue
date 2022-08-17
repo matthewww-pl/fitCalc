@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    strona główna
+    <Intro />
     <br>
   </div>
 </template>

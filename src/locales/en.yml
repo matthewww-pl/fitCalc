@@ -1,5 +1,12 @@
-title: "Fit Calc"
-description: "Application to calculate BMI and PPM"
-getStarted: "Get started"
-404: "Pages not found.."
-back: "Back"
+header:
+  title: "Fit Calc"
+  description: "Application to calculate BMI and PPM"
+  getStarted: "Get started"
+404:
+  notFound: "Pages not found.."
+  back: "Back"
+intro:
+  title: "Intro"
+  subtitle: "Obliczanie zapotrzebowania kalorycznego"
+  text: "Otóż przysłowie „diabeł tkwi w szczegółach” jest bardzo dobrym określeniem na odpowiednie odżywianie. Nie wystarczy jeść „do odcięcia”, aby budować masę mięśniową. Podobnie jest przy redukcji tkanki tłuszczowej. Głodzenie się, aby jak najszybciej zrzucić zbędny balast doprowadzi do spadków mięśniowych w znaczącym stopniu. Ponadto określona podaż poszczególnych makroskładników ma tutaj kluczowe znaczenie, szczególnie jeśli oczekujesz, aby w lustrze widzieć własne mięśnie, a nie sadło."
+  next: "Go to Calc"
