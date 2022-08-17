@@ -30,7 +30,7 @@
                 <a
                   href="#"
                   @click="setLang('pl')"
-                  :class="{'bg-gray-800' : locale=='pl'}"
+                  :class="{'bg-gray-700' : locale=='pl'}"
                   class="
                     rounded-l
                     px-6
@@ -51,7 +51,7 @@
                 <a
                   href="#"
                   @click="setLang('en')"
-                  :class="{'bg-gray-800' : locale=='en'}"
+                  :class="{'bg-gray-700' : locale=='en'}"
                   class="
                     rounded-r
                     px-6

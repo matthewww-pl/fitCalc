@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="dark:bg-gray-800">
+  <div>
     strona główna
     <br>
   </div>
