@@ -12,9 +12,9 @@
   }
   
   useHead({
-    title: t('title'),
+    title: t('header.title'),
     meta: [
-      { name: 'description', content: t('description') },
+      { name: 'description', content: t('header.description') },
     ]
   })
 </script>
