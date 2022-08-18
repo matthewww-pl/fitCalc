@@ -33,7 +33,7 @@ export default defineConfig({
       ],
       dts: 'src/auto-imports.d.ts',
       dirs: [
-        //'src/store',
+        'src/store',
       ],
     }),
     VitePWA({

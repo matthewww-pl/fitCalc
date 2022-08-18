@@ -6,6 +6,7 @@ import { createHead } from '@vueuse/head'
 import { createI18n } from 'vue-i18n'
 import messages from '@intlify/vite-plugin-vue-i18n/messages'
 import VueScrollTo from 'vue-scrollto'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import 'tw-elements';
 import './style.css'
@@ -24,9 +25,12 @@ const i18n = createI18n({
   messages
 })
 
+const pinia = createPinia()
+
 const app = createApp(App)
 app.use(head)
 app.use(router)
 app.use(i18n)
 app.use(VueScrollTo)
+app.use(pinia)
 app.mount('#app')
