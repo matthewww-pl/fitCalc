@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BmiCalc: typeof import('./components/bmiCalc.vue')['default']
     Footer: typeof import('./components/footer.vue')['default']
     Header: typeof import('./components/header.vue')['default']
     Intro: typeof import('./components/intro.vue')['default']

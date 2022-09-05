@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <Intro />
-    <br>
+    <Intro v-motion-fade />
+    <BmiCalc v-motion-fade />
   </div>
 </template>

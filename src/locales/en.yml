@@ -1,13 +1,40 @@
 header:
   title: "Fit Calc"
-  description: "Application to calculate BMI and PPM"
+  description: "Application to calculate BMI and BMR"
   getStarted: "Get started"
 404:
   notFound: "Pages not found.."
   back: "Back"
-intro:
+intro: 
   title: "Intro"
-  subtitle: "Obliczanie zapotrzebowania kalorycznego"
-  text: "Otóż przysłowie „diabeł tkwi w szczegółach” jest bardzo dobrym określeniem na odpowiednie odżywianie. Nie wystarczy jeść „do odcięcia”, aby budować masę mięśniową. Podobnie jest przy redukcji tkanki tłuszczowej. Głodzenie się, aby jak najszybciej zrzucić zbędny balast doprowadzi do spadków mięśniowych w znaczącym stopniu. Ponadto określona podaż poszczególnych makroskładników ma tutaj kluczowe znaczenie, szczególnie jeśli oczekujesz, aby w lustrze widzieć własne mięśnie, a nie sadło."
-  quote: "Text from page budujmase.pl"
-  next: "Go to Calc"
+  bmr:
+    subtitle: "Calculation of the caloric demand"
+    text: "Eating cut off is not enough to build muscle mass. It is similar when reducing body fat. Starving yourself to lose unnecessary ballast as quickly as possible will lead to significant muscle decline. In addition, the specific supply of individual macronutrients is crucial here, especially if you expect to see your own muscles in the mirror, not fat."
+    quote: "Text from page budujmase.pl"
+    next: "Go to BMR Calc"
+  bmi:
+    subtitle: "Calculating your body mass index"
+    text: "Body mass index (BMI) is an estimate of your body fat percentage based on your weight to height ratio. It helps you determine if your weight is normal or if you are underweight, overweight or obese. BMI can be used to assess the risk of developing certain health problems. For example, people with a higher BMI are believed to be more likely to develop high blood pressure, coronary heart disease, and high cholesterol."
+    quote: "Text from page budujmase.pl"
+    next: "Go to BMI Calc"
+bmi:
+  title: "Calculating your body mass index"
+  form:
+    gender: "Sex"
+    woman: "Woman"
+    man: "Man"
+    weight: "Weight (kilograms)"
+    height: "Height (centimeters)"
+    calc: "Calculate"
+    clear: "Clear"
+  status:
+    1: "starvation"
+    2: "emaciation"
+    3: "underweight"
+    4: "correct weight"
+    5: "overweight"
+    6: "1st degree obesity"
+    7: "2st degree obesity"
+    8: "3st degree obesity"
+  results: "Your result"
+  valueBMI: "BMI value:"

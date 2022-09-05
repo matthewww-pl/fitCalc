@@ -1,13 +1,40 @@
 header:
   title: "Fit Kalkulator"
-  description: "Aplikacja do obliczenia BMI oraz PPM"
+  description: "Aplikacja do obliczenia BMI oraz BMR"
   getStarted: "Rozpocznij"
 404:
   notFound: "Strona nie istnieje.."
   back: "Wstecz"
 intro: 
   title: "Wstęp"
-  subtitle: "Obliczanie zapotrzebowania kalorycznego"
-  text: "Otóż przysłowie „diabeł tkwi w szczegółach” jest bardzo dobrym określeniem na odpowiednie odżywianie. Nie wystarczy jeść „do odcięcia”, aby budować masę mięśniową. Podobnie jest przy redukcji tkanki tłuszczowej. Głodzenie się, aby jak najszybciej zrzucić zbędny balast doprowadzi do spadków mięśniowych w znaczącym stopniu. Ponadto określona podaż poszczególnych makroskładników ma tutaj kluczowe znaczenie, szczególnie jeśli oczekujesz, aby w lustrze widzieć własne mięśnie, a nie sadło."
-  quote: "Tekst ze strony budujmase.pl"
-  next: "Przejdź do Kalkulatora"
+  bmr:
+    subtitle: "Obliczanie zapotrzebowania kalorycznego"
+    text: "Otóż przysłowie „diabeł tkwi w szczegółach” jest bardzo dobrym określeniem na odpowiednie odżywianie. Nie wystarczy jeść „do odcięcia”, aby budować masę mięśniową. Podobnie jest przy redukcji tkanki tłuszczowej. Głodzenie się, aby jak najszybciej zrzucić zbędny balast doprowadzi do spadków mięśniowych w znaczącym stopniu. Ponadto określona podaż poszczególnych makroskładników ma tutaj kluczowe znaczenie, szczególnie jeśli oczekujesz, aby w lustrze widzieć własne mięśnie, a nie sadło."
+    quote: "Tekst ze strony budujmase.pl"
+    next: "Przejdź do Kalkulatora BMR"
+  bmi:
+    subtitle: "Obliczanie indeksu masy ciała"
+    text: "Wskaźnik masy ciała (BMI) to szacunkowa zawartość tkanki tłuszczowej określana na podstawie relacji wagi i wzrostu. Pomaga określić, czy Twoja waga jest prawidłowa, lub czy masz niedowagę, nadwagę albo otyłość. BMI można wykorzystać do oceny ryzyka wystąpienia pewnych problemów zdrowotnych. Na przykład uważa się, że osoby o wyższym BMI są bardziej narażone na nadciśnienie, chorobę wieńcową i wysoki poziom cholesterolu."
+    quote: "Tekst ze strony budujmase.pl"
+    next: "Przejdź do Kalkulatora BMI"
+bmi:
+  title: "Obliczanie indeksu masy ciała"
+  form:
+    gender: "Płeć"
+    woman: "Kobieta"
+    man: "Mężczyzna"
+    weight: "Waga (kilogramy)"
+    height: "Wzrost (centymetry)"
+    calc: "Oblicz"
+    clear: "Wyczyść"
+  status:
+    1: "wygłodzenie"
+    2: "wychudzenie"
+    3: "niedowaga"
+    4: "waga prawidłowa"
+    5: "nadwaga"
+    6: "otyłość I stopnia"
+    7: "otyłość II stopnia"
+    8: "otyłość III stopnia"
+  results: "Twój wynik"
+  valueBMI: "Wartość BMI:"

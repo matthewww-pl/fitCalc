@@ -9,10 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formkit/i18n": "^1.0.0-beta.10",
+    "@formkit/themes": "^1.0.0-beta.10",
+    "@formkit/vue": "^1.0.0-beta.10",
     "@intlify/vite-plugin-vue-i18n": "^6.0.1",
     "@vueuse/core": "^8.9.4",
     "@vueuse/head": "^0.7.6",
     "@vueuse/integrations": "^9.1.0",
+    "@vueuse/motion": "^2.0.0-beta.12",
     "autoprefixer": "^10.4.8",
     "bootstrap-icons": "^1.9.1",
     "pinia": "^2.0.19",

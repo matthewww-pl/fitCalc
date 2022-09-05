@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col h-screen">
-    <Header/>
+    <Header v-motion-fade />
     <div class="flex-grow">
        <RouterView />
     </div>
-    <Footer/>
+    <Footer v-motion-fade/>
   </div>
 </template>
