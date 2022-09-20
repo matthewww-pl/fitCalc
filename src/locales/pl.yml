@@ -38,3 +38,32 @@ bmi:
     8: "otyłość III stopnia"
   results: "Twój wynik"
   valueBMI: "Wartość BMI:"
+bmr:
+  title: "Obliczanie zapotrzebowania kalorycznego"
+  alert: "Do obliczenia BMR jako pierwsze musisz obliczyć wskaźnik BMI"
+  form:
+    age: "Wiek"
+    body: "Typ Sylwetki"
+    bodyHelp: "Pomoc w ustaleniu typu sylwetki"
+    lifestyle: "Styl Życia"
+    goal: "Cel"
+    calc: "Oblicz"
+    clear: "Wyczyść"
+  body:
+    ectomorphs: "Ektomorfik"
+    mesomorphs: "Mezomorfik"
+    endomorphs: "Endomorfik"
+  lifestyle:
+    mass: "budowanie masy mięśniowej"
+    reduction: "redukcja tkanki tłuszczowej"
+  goal:
+    1,0: "leżący lub siedzący tryb życia, brak aktywności fizycznej"
+    1,2: "praca siedząca, aktywność fizyczna na niskim poziomie"
+    1,4: "praca nie fizyczna, trening 2 razy w tygodniu"
+    1,6: "lekka praca fizyczna, trening 3-4 razy w tygodniu"
+    1,8: "praca fizyczna, trening 5 razy w tygodniu"
+    2,0: "ciężka praca fizyczna, codzienny trening"
+  results: "Twój wynik"
+  ppm: "Dzienna podstawowa przemiana materii"
+  dayKcal: "Dzienne zapotrzebowanie kaloryczne"
+  goalKcal: "Dzienne zapotrzebowanie kaloryczne z określonym celem"

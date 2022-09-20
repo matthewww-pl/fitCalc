@@ -3,6 +3,8 @@
   const isDark = useDark()
   const toggleDark = useToggle(isDark)
   const cookies = useCookies()
+  const config : any = inject(Symbol.for('FormKitConfig'))
+  config.locale = locale.value
   
   watch(isDark, () => {
     cookies.set('darkMode',isDark.value, { maxAge: 60*60*24*7 })
@@ -10,6 +12,7 @@
 
   watch(locale, () => {
     cookies.set('locale', locale.value, { maxAge: 60*60*24*7 })
+    config.locale = locale.value
   })
 
   const setLang = (lang: string) =>{

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-  const { t, locale } = useI18n()
-  const config : any = inject(Symbol.for('FormKitConfig'))
+  const { t } = useI18n()
   const displayResult = ref(false)
   const formData = reactive({
     gender: null,
@@ -8,10 +7,6 @@
     height: null
   })
   const calc = useCalcStore()
-
-  watch(locale, () => {
-    config.locale = locale.value
-  })
 
   const submitHandler = () => {
     calc.bmiCalc(formData)
@@ -41,13 +36,18 @@
             type="select"
             :label="t('bmi.form.gender')"
             :options="[
-              '',
-              t('bmi.form.woman'),
-              t('bmi.form.man')
+              {label: '', value: ''},
+              {label: t('bmi.form.woman'), value: 1},
+              {label: t('bmi.form.man'), value: 2}
             ]"
             v-model="formData.gender"
-            validation-visibility="submit"
+            validation-visibility="blur"
             validation="required"
+            :wrapper-class="{
+              'md:w-96 sm:w-full': true,
+            }"
+            input-class="dark:text-white text-black"
+            option-class="text-black"
           />
           <FormKit type="text" :label="t('bmi.form.weight')"
             v-model="formData.weight"
@@ -115,3 +115,9 @@
     </div>
   </section>
 </template>
+<style scoped>
+.colorWhite{
+  color: #fff !important;
+  background: transparent !important;
+}
+</style>

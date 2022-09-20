@@ -15,7 +15,7 @@
         <p class="text-2xl font-bold mt-20">{{ $t('intro.bmr.subtitle') }}</p>
         <p class="text-xl my-4">{{ $t('intro.bmr.text') }}</p>
         <p>-- {{ $t('intro.bmr.quote') }}</p>
-        <a v-scroll-to="'#ppm'" class="inline-block px-7 py-3 mt-10 bg-gray-700 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">{{ $t('intro.bmr.next') }}</a>
+        <a v-scroll-to="'#bmr'" class="inline-block px-7 py-3 mt-10 bg-gray-700 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">{{ $t('intro.bmr.next') }}</a>
       </div>
     </section>
   </div>

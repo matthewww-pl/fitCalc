@@ -38,3 +38,32 @@ bmi:
     8: "3st degree obesity"
   results: "Your result"
   valueBMI: "BMI value:"
+bmr:
+  title: "Calculation of the caloric demand"
+  alert: "To calculate your BMR, you first need to calculate your BMI"
+  form:
+    age: "Age"
+    body: "Body Type"
+    bodyHelp: "Help in determining the body type"
+    lifestyle: "Lifestyle"
+    goal: "Goal"
+    calc: "Calculate"
+    clear: "Clear"
+  body:
+    ectomorphs: "Ectomorphs"
+    mesomorphs: "Mesomorphs"
+    endomorphs: "Endomorphs"
+  lifestyle:
+    mass: "building muscle mass"
+    reduction: "reduction of adipose tissue"
+  goal:
+    1,0: "lying or sedentary lifestyle, lack of physical activity"
+    1,2: "sedentary work, low-level physical activity"
+    1,4: "non-physical work, training twice a week"
+    1,6: "light physical work, training 3-4 times a week"
+    1,8: "physical work, training 5 times a week"
+    2,0: "hard physical work, daily training"
+  results: "Your result"
+  ppm: "Daily basic metabolism"
+  dayKcal: "Daily caloric requirement"
+  goalKcal: "Daily caloric requirement with a specific goal"
